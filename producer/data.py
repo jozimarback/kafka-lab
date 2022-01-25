@@ -7,5 +7,3 @@ def get_registered_user():
         "address": fake.address(),
         "created_at": fake.year()
     }
-
-print(get_registered_user())

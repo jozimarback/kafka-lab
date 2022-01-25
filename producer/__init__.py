@@ -8,7 +8,7 @@ from data import get_registered_user
 def json_serializer(data):
     return json.dumps(data).encode("utf-8")
 
-producer = KafkaProducer(bootstrap_servers=['192.168.0.10:29092']
+producer = KafkaProducer(bootstrap_servers=['localhost:29092']
         ,value_serializer=json_serializer)
 
 if __name__ == "__main__":
